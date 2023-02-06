@@ -15,8 +15,15 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
-        .padding()
+        .padding().onAppear {
+            Task {
+                let servicesSettings = Resource<[Product]>(url: URL.forAllProducts)
+                let products = try await Webservice().load(servicesSettings)
+                print(products)
+            }
+        }
     }
+        
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -14,6 +14,9 @@
 		B935F56829918EF7000868EE /* emotionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B935F56729918EF7000868EE /* emotionTests.swift */; };
 		B935F57229918EF7000868EE /* emotionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B935F57129918EF7000868EE /* emotionUITests.swift */; };
 		B935F57429918EF7000868EE /* emotionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B935F57329918EF7000868EE /* emotionUITestsLaunchTests.swift */; };
+		B935F58A29919409000868EE /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B935F58929919409000868EE /* ServiceManager.swift */; };
+		B935F58C299196A8000868EE /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B935F58B299196A8000868EE /* ServiceConstants.swift */; };
+		B935F58E29919D4A000868EE /* ProductResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B935F58D29919D4A000868EE /* ProductResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		B935F56D29918EF7000868EE /* emotionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = emotionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B935F57129918EF7000868EE /* emotionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emotionUITests.swift; sourceTree = "<group>"; };
 		B935F57329918EF7000868EE /* emotionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emotionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B935F58929919409000868EE /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		B935F58B299196A8000868EE /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
+		B935F58D29919D4A000868EE /* ProductResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +100,13 @@
 		B935F55529918EF6000868EE /* emotion */ = {
 			isa = PBXGroup;
 			children = (
+				B935F58529919388000868EE /* utilities */,
+				B935F5842991921C000868EE /* models */,
+				B935F58329919203000868EE /* ui */,
+				B935F582299190EB000868EE /* services */,
+				B935F58129918FAB000868EE /* sources */,
+				B935F58029918F48000868EE /* managers */,
 				B935F55629918EF6000868EE /* emotionApp.swift */,
-				B935F55829918EF6000868EE /* ContentView.swift */,
-				B935F55A29918EF7000868EE /* Assets.xcassets */,
-				B935F55C29918EF7000868EE /* Preview Content */,
 			);
 			path = emotion;
 			sourceTree = "<group>";
@@ -125,6 +134,86 @@
 				B935F57329918EF7000868EE /* emotionUITestsLaunchTests.swift */,
 			);
 			path = emotionUITests;
+			sourceTree = "<group>";
+		};
+		B935F58029918F48000868EE /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				B935F58929919409000868EE /* ServiceManager.swift */,
+			);
+			path = managers;
+			sourceTree = "<group>";
+		};
+		B935F58129918FAB000868EE /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				B935F55C29918EF7000868EE /* Preview Content */,
+				B935F55A29918EF7000868EE /* Assets.xcassets */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		B935F582299190EB000868EE /* services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		B935F58329919203000868EE /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				B935F55829918EF6000868EE /* ContentView.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		B935F5842991921C000868EE /* models */ = {
+			isa = PBXGroup;
+			children = (
+				B935F59029919D57000868EE /* request */,
+				B935F58F29919D50000868EE /* response */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		B935F58529919388000868EE /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B935F587299193A7000868EE /* extensions */,
+				B935F58629919398000868EE /* constants */,
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
+		B935F58629919398000868EE /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				B935F58B299196A8000868EE /* ServiceConstants.swift */,
+			);
+			path = constants;
+			sourceTree = "<group>";
+		};
+		B935F587299193A7000868EE /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		B935F58F29919D50000868EE /* response */ = {
+			isa = PBXGroup;
+			children = (
+				B935F58D29919D4A000868EE /* ProductResponseModel.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		B935F59029919D57000868EE /* request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +346,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B935F58E29919D4A000868EE /* ProductResponseModel.swift in Sources */,
 				B935F55929918EF6000868EE /* ContentView.swift in Sources */,
 				B935F55729918EF6000868EE /* emotionApp.swift in Sources */,
+				B935F58A29919409000868EE /* ServiceManager.swift in Sources */,
+				B935F58C299196A8000868EE /* ServiceConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +508,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"emotion/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"emotion/sources/Preview Content\"";
 				DEVELOPMENT_TEAM = LCR365ZNU6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -445,7 +537,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"emotion/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"emotion/sources/Preview Content\"";
 				DEVELOPMENT_TEAM = LCR365ZNU6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
